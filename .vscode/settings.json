@@ -1,0 +1,22 @@
+{
+  "go.testFlags": [
+    "-failfast",
+    "-v"
+  ],
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "go.lintOnSave": "file",
+  "go.lintTool": "golangci-lint", 
+  "go.lintFlags": [
+    "--fix"
+  ],
+  "go.formatTool": "goimports",
+  "go.useLanguageServer": true,
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+}
