@@ -1,4 +1,8 @@
 {
+ "editor.codeActionsOnSave": {
+  "source.organizeImports": true,
+  },
+  "editor.formatOnSave": true,
   "go.testFlags": [
     "-failfast",
     "-v"
@@ -11,12 +15,17 @@
   "go.lintFlags": [
     "--fix"
   ],
-  "go.formatTool": "goimports",
   "go.useLanguageServer": true,
   "[go]": {
-    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.organizeImports": true
-    }
+    },
   },
+  "go.addTags": {
+    "tags": "json, db",
+    "options": "json=omitempty",
+    "promptForTags": false,
+    "transform": "snakecase",
+    "template": ""
+  }
 }
